@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Methods</title>
+</head>
+
+<body>
+  <h1>Ways to manipulate forms</h1>
+
+  <form id="form-cadastro" action="cadastro.php" method="POST" enctype="application/x-www-form-urlencoded" name="form-cadastro">
+
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email">
+    <!-- formaction and formmethod is more specific than action and method, we can send same information to different locations and specify method of send information-->
+    <input type="submit" name="cadastrar" formaction="cadastro.php" formmethod="GET" formenctype="application/x-www-form-urlencoded" value="Cadastrar">
+    <!-- Creating a button to send same content but for different page -->
+    <!-- We can set a specific input to not validade -->
+    <input type="submit" name="enviar-por-email" formaction="enviar-email.php" formmethod="POST" formenctype="application/x-www-form-urlencoded" value="Enviar por E-Mail" formnovalidate>
+  </form>
+
+  <p>Usually, input fields are created inside the form tag, but it is also possible to create them outside and link them to a form</p>
+
+  <input type="text" name="name" form="form-cadastro">
+
+</body>
+
+</html>

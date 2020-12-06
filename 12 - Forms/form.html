@@ -128,6 +128,45 @@
       <br>
       <br>
 
+      <label for="select-options">Select Languages</label>
+      <br>
+      <select name="select-options" id="select-options">
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="Javascript">Javascript</option>
+        <option value="PHP">PHP</option>
+        <option value="Ruby">Ruby</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="select-option-by-group">Select tools</label>
+      <br>
+      <select name="select-option-by-group" id="select-option-by-group">
+        <optgroup label="Java">
+          <option value="spring">Spring</option>
+          <option value="wildfly" selected>Wild Fly</option>
+          <option value="tomcat">Tomcat</option>
+        </optgroup>
+
+        <optgroup label="Python">
+          <option value="django">Django</option>
+          <option value="flask">Flask</option>
+          <option value="pandas">Pandas</option>
+        </optgroup>
+      </select>
+      <br>
+      <br>
+
+      <label for="datalist">Data List</label>
+      <br>
+      <input name="Courses" list="courses-list">
+      <datalist id="courses-list">
+        <option value="Javascript"></option>
+        <option value="Express"></option>
+        <option value="JWT"></option>
+      </datalist>
+
       <br>
       <br>
       <input type="submit" name="btn-submit" value="Submit" required>
