@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid #000;
+    }
+    
+    th,
+    td {
+      padding: 5px;
+    }
+    
+    .ID {
+      background-color: royalblue;
+    }
+    
+    .Name {
+      background-color: seagreen;
+    }
+    
+    .E-Mail {
+      background-color: tomato;
+    }
+    
+    .Phone {
+      background-color: yellowgreen;
+    }
+    
+    .Role {
+      background-color: teal;
+    }
+    
+    .Total {
+      background: red;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Using tables</h1>
+  <p>Tables is used to showing structured data</p>
+
+  <h2>Table</h2>
+
+  <table>
+    <caption>Cadastro de Clientes</caption>
+
+    <!-- Using colgroup to apply styles based by named classes of thead -->
+    <colgroup>
+      <col class="ID">
+      <col class="Name">
+      <col class="E-Mail">
+      <col class="Phone">
+      <col class="Role">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>E-Mail</th>
+        <th>Phone</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Matheus</td>
+        <td>matheus.hpp135@gmail.com</td>
+        <td>(91) 98491-0900</td>
+        <td>Fullstack Dev</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Thiago</td>
+        <td>yato135@outlook.com</td>
+        <td>(91) 98944-2684</td>
+        <td rowspan="2">Student</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Dariane</td>
+        <td>regineteixeira15@gmail.com</td>
+        <td>(91) 98590-9906</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="5">Total: 2</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+
+</html>
